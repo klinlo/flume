@@ -1,75 +1,169 @@
-  <!DOCTYPE html>
-   <html lang="zh-CN">
-   <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>欢迎访问</title>
-<style>
- body {
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-}
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-}
-.container {
-width: 80%;
-max-width: 600px;
-margin: 50px auto;
-padding: 20px;
-background-color: #fff;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-button {
-width: 100%;
-padding: 10px;
-margin: 5px 0;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-font-size: 16px;
-transition: background-color 0.3s ease-in-out;
-}
-button:hover {
-background-color: #e6e6e6;
-}
-   button {
-color: black;
-   }
-      button {
-   background-color: black;
-   color: white; /* 设置文字颜色为白色以确保可读性 */
-      }
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎访问>huan'yi
+    <style>
+        /* 页面基础设置 */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
 
+        a {
+            color: #409eff;
+            text-decoration: none;
+        }
 
-   button {
-background-color: #1ec733;
-color: #1c1b1b;
-border: 2px solid #dbafa2; /* 设置边框颜色为黑色 */
-padding: 10px 20px; /* 设置内边距 */
-border-radius: 5px; /* 设置圆角 */
-   }
-</style>
-   </head>
-   
-   
-   <body>
- 
-	<script>
-	   var ua = navigator.userAgent.toLowerCase ();
-	   var isWeixin = (ua.indexOf ('micromessenger') > -1);
-	   if (isWeixin) {
-		   var bodyElement = document.body ;
-		   var backgroundImage = "";
-		   bodyElement.style.backgroundImage  = `url(${backgroundImage})`;
-	   } else {
-			location.href  = 'https://aq.lumawang.com/AfPWtCxiazai';
-	   } 
-	</script>
-   </body>
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 容器布局 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,.1);
+        }
+
+        /* 标题区块 */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #409eff;
+        }
+
+        header p {
+            color: #777;
+            font-size: 1.2em;
+        }
+
+        /* 导航栏 */
+        nav {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        nav a {
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        /* 文章列表 */
+        .post-list .post-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .post-list h2 {
+            margin: 0 0 5px;
+            font-size: 1.8em;
+            color: #409eff;
+        }
+
+        .post-list .meta {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .post-list p {
+            margin: 0;
+        }
+
+        /* 关于页面 */
+        .about-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .about-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .about-section div {
+            flex: 1;
+        }
+
+        /* 底部 */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            color: #777;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题区块 -->
+        <header>
+            <h1>你的名字的个人博客</h1>
+            <p>记录生活，分享思考</p>
+        </header>
+
+        <!-- 导航栏 -->
+        <nav>
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+            <a href="#archive">归档</a>
+        </nav>
+
+        <!-- 关于 Section -->
+        <section id="about" class="about-section">
+            <img src="https://via.placeholder.com/150" alt="头像">
+            <div>
+                <h2>关于我</h2>
+                <p>你好，我是 <strong>你的名字</strong>，一名热爱 <strong>技术/写作/摄影</strong> 的普通人。在这里，我将分享我的生活记录、技术笔记以及随笔碎片。</p>
+                <p>喜欢的事物：<strong>阅读、咖啡、旅行</strong>。</p>
+            </div>
+        </section>
+
+        <!-- 归档 Section -->
+        <section id="archive" class="post-list">
+            <h2>文章归档</h2>
+            <div class="post-item">
+                <h2><a href="#">博客搭建：从零开始的第一步</a></h2>
+                <p class="meta">2025-12-30 • 分类: 技术</p>
+                <p>在这篇文章中，我记录了如何搭建一个属于自己的个人博客，从域名购买到内容发布。</p>
+            </div>
+            <div class="post-item">
+                <h2><a href="#">阅读笔记：《活着》</a></h2>
+                <p class="meta">2025-11-20 • 分类: 随笔</p>
+                <p>余华的《活着》是一本让人沉思的书。...</p>
+            </div>
+            <div class="post-item">
+                <h2><a href="#">旅行随记：雾都重庆</a></h2>
+                <p class="meta">2025-10-15 • 分类: 旅行</p>
+                <p>重庆的山城风光总是让我着迷，尤其是雨后的...</p>
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <footer>
+            © 2025 你的名字. 保留所有权利.
+        </footer>
+    </div>
+</body>
 </html>
